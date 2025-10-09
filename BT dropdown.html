@@ -6,6 +6,11 @@
     <title>Student Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     
 
 </head>
@@ -32,7 +37,7 @@
             </div>
         </nav>
     <div class="container py-4">
-        <div class="row">
+        <div class="row g-4">
             <div class="col-md-3">
                  <ul class="nav flex-column nav-pills">
                     <li class="nav-item">
@@ -48,6 +53,51 @@
                         <a class="nav-link" href="#">Settings</a>
                     </li>
                  </ul>
+            </div>
+            <div class="col-md-9 ">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item">Overview</li>
+                </ul>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="fw-bold">Welcome Back, Student! </h2>
+                 <h2><span class="badge bg-primary text-dark">Level 4 Learner</span></h2>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Course Progress</div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Instructor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML & CSS Basics</td>
+                            <td>Jane Doe</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap Essentials</td>
+                            <td>John Smith</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>React Fundamentals</td>
+                            <td>Emily Davis</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
