@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row my-5 justify-content-center">
+        <div class="col-md-5">  
+            <div class="card">
+                <div class="card-header bg-white">
+                    <h2 class="text-center text-dark font-weight-bold ">Customer Support</h2>
+                </div>
+            <div class="card-body bg-dark">  
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Full Name</span>
+                </div>
+            <input type="text" class="form-control"  id="name" placeholder="Enter Full Name" >
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">+91</span>
+                </div>
+            <input type="tel" class="form-control"  id="mobile" placeholder="Mobile No:" pattern="[0-9]{10}" maxlength="10">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+            <div class="input-group-prepend">
+                    <span class="input-group-text">Issue</span>
+                </div>
+            <select class="form-control" id="sel1">
+                <option >Over Heating</option>
+                <option >Hang Issue</option>
+                <option >Display issue</option>
+                <option >Green Lines</option>
+            </select>
+            </div>
+            </div>
+            <div class="form-group text-center">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Comment</span>
+                </div>
+            <textarea type="text" class="form-control" rows="5"  id="comment" ></textarea>
+            </div><br>
+            <button class="btn btn-success" type="submit">Submit</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
